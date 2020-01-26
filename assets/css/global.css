@@ -331,7 +331,9 @@ textarea {
     resize: vertical;
 }
 
-p,
+p {
+    text-align: justify;
+}
 ul,
 ol,
 dl,
