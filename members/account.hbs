@@ -10,7 +10,7 @@
 
         {{!-- Logged in, paying member: Show account info --}}
         <div class="subscriber-box">
-            <h1 class="subscriber-box-title">Your account</h1>
+            <h1 class="subscriber-box-title">{{t "Your account"}}</h1>
 
             {{#foreach @member.subscriptions}}
                 <div class="subscription">
@@ -49,15 +49,16 @@
                             </label>
                             <span class="subscriber-detail-content">{{date current_period_end format="DD MMM YYYY"}}</span>
                         </div>
+                        
+                        {{#contentFor "scripts"}}
+                        <script>
+                            $(document).ready(function () {
+                                var planAmount = {{ plan.amount }} / 100;
+                                $(".plan-price").html(planAmount);
+                            });
+                        </script>
+                        {{/contentFor}}
                     </div>
-                    {{#contentFor "scripts"}}
-                    <script>
-                        $(document).ready(function () {
-                            var planAmount = {{ plan.amount }} / 100;
-                            $(".plan-price").html(planAmount);
-                        });
-                    </script>
-                    {{/contentFor}}
                     
                     {{cancel_link}}
                 </div>
