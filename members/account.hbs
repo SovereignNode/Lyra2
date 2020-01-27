@@ -10,7 +10,7 @@
 
         {{!-- Logged in, paying member: Show account info --}}
         <div class="subscriber-box">
-            <h1 class="subscriber-box-title">Your account</h1>
+            <h1 class="subscriber-box-title">{{t "Your account"}}</h1>
 
             {{#foreach @member.subscriptions}}
                 <div class="subscription">
@@ -31,7 +31,7 @@
 
                         <div class="subscriber-detail">
                             <label class="subscriber-detail-label">{{t "Your plan"}}</label>
-                            <span class="subscriber-detail-content">${{plan.amount}}/{{plan.interval}}</span>
+                            <span class="subscriber-detail-content">${{plan.amount/100}}/{{plan.interval}}</span>
                         </div>
 
                         <div class="subscriber-detail">
