@@ -31,7 +31,7 @@
 
                         <div class="subscriber-detail">
                             <label class="subscriber-detail-label">{{t "Your plan"}}</label>
-                            <span class="subscriber-detail-content">${{plan.amount/100}}/{{plan.interval}}</span>
+                            <span class="subscriber-detail-content">$<span class="plan-price">0</span>/{{plan.interval}}</span>
                         </div>
 
                         <div class="subscriber-detail">
@@ -50,7 +50,15 @@
                             <span class="subscriber-detail-content">{{date current_period_end format="DD MMM YYYY"}}</span>
                         </div>
                     </div>
-
+                    {{#contentFor "scripts"}}
+                    <script>
+                        $(document).ready(function () {
+                            var planAmount = {{ plan.amount }} / 100;
+                            $(".plan-price").html(planAmount);
+                        });
+                    </script>
+                    {{/contentFor}}
+                    
                     {{cancel_link}}
                 </div>
             {{/foreach}}
