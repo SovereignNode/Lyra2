@@ -6,7 +6,7 @@
     "Page {page} of {pages}": "Page {page} of {pages}",
     "Subscribe": "Subscribe",
     "Subscribe now": "Subscribe now",
-    "You don't have access to this post on <strong>{blogtitle}</strong> at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.": "You don't have access to this post on <strong>{blogtitle}</strong> at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.",
+    "You don't have access to this post on {blogtitle} at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.": "You don't have access to this post on {blogtitle} at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.",
     "This post is for paying subscribers only": "This post is for paying subscribers only",
     "This post is for subscribers only": "This post is for subscribers only",
     "Choose your subscription": "Choose your subscription",
