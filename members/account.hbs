@@ -49,7 +49,7 @@
                             </label>
                             <span class="subscriber-detail-content">{{date current_period_end format="DD MMM YYYY"}}</span>
                         </div>
-                        
+
                         {{#contentFor "scripts"}}
                         <script>
                             $(document).ready(function () {
@@ -59,7 +59,7 @@
                         </script>
                         {{/contentFor}}
                     </div>
-                    
+
                     {{cancel_link}}
                 </div>
             {{/foreach}}
@@ -69,13 +69,13 @@
 
         {{!-- Logged in, not paying: Link to checkout --}}
         <div class="account-box">
-            <h1 class="account-box-title">{{t "Currently, you're not a subscriber"}}</h1>
-            <p>{{t "Hey there!"}} <strong>{{@member.email}}</strong> {{t "is subscribed to free updates from {blogtitle}, but doesn't have a paid subscription to unlock full access." blogtitle=@site.title}}</p>
-            <div class="authbox-signup">
+            <h1 class="account-box-title">{{t "You've succesfully subscribed to {blogtitle}!"}}</h1>
+            <p>{{t "Hey there!"}} <strong>{{@member.email}}</strong> {{t "is succesfully subscribed to {blogtitle} and will receive e-mails when new articles are published."}}</p>
+            <!-- <div class="authbox-signup">
                 <a class="button primary" href="/signup/">
                     <span class="button-content">{{t "Subscribe now"}}</span>
                 </a>
-            </div>
+            </div> -->
         </div>
 
     {{else}}
