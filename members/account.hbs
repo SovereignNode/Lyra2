@@ -69,8 +69,8 @@
 
         {{!-- Logged in, not paying: Link to checkout --}}
         <div class="account-box">
-            <h1 class="account-box-title">{{t "You've succesfully subscribed to {blogtitle}!"}}</h1>
-            <p>{{t "Hey there!"}} <strong>{{@member.email}}</strong> {{t "is succesfully subscribed to {blogtitle} and will receive e-mails when new articles are published."}}</p>
+            <h1 class="account-box-title">{{t "You've succesfully subscribed to {blogtitle}!" blogtitle=@site.title}}</h1>
+            <p>{{t "Hey there!"}} <strong>{{@member.email}}</strong> {{t "is succesfully subscribed to {blogtitle} and will receive e-mails when new articles are published." blogtitle=@site.title}}</p>
             <!-- <div class="authbox-signup">
                 <a class="button primary" href="/signup/">
                     <span class="button-content">{{t "Subscribe now"}}</span>
