@@ -1600,7 +1600,7 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 .subscribe-form {
     margin: 1.5em 0;
-    padding: 6.5vw 7vw 8vw;
+    padding: 2vw 2vw 2vw;
     border: color(var(--lightgrey) l(+10%)) 1px solid;
     text-align: center;
     background: linear-gradient(color(var(--whitegrey) l(+6%)), color(var(--whitegrey) l(+4%)));
@@ -1629,7 +1629,7 @@ Usage (In Ghost editor):
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 460px;
+    max-width: 720px;
 }
 
 .subscribe-form .form-group {
