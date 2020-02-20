@@ -85,5 +85,9 @@
                 "width": 2000
             }
         }
+    },
+    "dependencies": {
+        "beeper": "^2.0.0",
+        "pump": "^3.0.0"
     }
 }

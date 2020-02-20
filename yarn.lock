@@ -537,6 +537,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"beeper@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "beeper@npm:2.0.0"
+  dependencies:
+    delay: ^4.1.0
+  checksum: 4bea6609c889dd59ea0f69cc7402a4fa91c98d77b16ee6b30b2cd1ef96dccea1507adf40b582a1fbd48f7547550cd2eec2a0fa8e50bfcaccf47c7e5f6d85aed7
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^1.0.0":
   version: 1.13.1
   resolution: "binary-extensions@npm:1.13.1"
@@ -1546,6 +1555,13 @@ __metadata:
     is-descriptor: ^1.0.2
     isobject: ^3.0.1
   checksum: 4b0c53a97eb6db90432fb06b9764a78ad9de46d74838b8948ed1e9ff067a1baa491a2fb52042234cbc5783a79fc871ad5eb752bdf61422b14bb2089a28a55364
+  languageName: node
+  linkType: hard
+
+"delay@npm:^4.1.0":
+  version: 4.3.0
+  resolution: "delay@npm:4.3.0"
+  checksum: aba6c26416bfe78523a8e30a84ab6ded9318fe7cf10fd3446c3698508d0079bc4ed0c0bf72b0f2334366718fb445c6cb5da1138b75e16137c87b57c7c9c928dd
   languageName: node
   linkType: hard
 
@@ -4047,6 +4063,7 @@ fsevents@^1.2.7:
   dependencies:
     "@tryghost/release-utils": 0.3.2
     autoprefixer: 9.7.3
+    beeper: ^2.0.0
     cssnano: 4.1.10
     gscan: 2.11.0
     gulp: 4.0.2
@@ -4060,6 +4077,7 @@ fsevents@^1.2.7:
     postcss-color-function: 4.1.0
     postcss-custom-properties: 9.0.2
     postcss-easy-import: 3.0.0
+    pump: ^3.0.0
   languageName: unknown
   linkType: soft
 
