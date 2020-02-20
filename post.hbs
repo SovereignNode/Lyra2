@@ -88,9 +88,7 @@ into the {body} of the default.hbs template --}}
             {{#if access}}
             {{!-- if the user has access to this post, show it to them --}}
 
-                {{#unless @member}}
-                    {{> subscribe-form}}
-                {{/unless}}
+
 
                 {{#if feature_image}}
                 <figure class="post-full-image">
@@ -110,6 +108,10 @@ into the {body} of the default.hbs template --}}
                 </figure>
                 {{/if}}
 
+                {{#unless @member}}
+                    {{> subscribe-form}}
+                {{/unless}}
+                
                 <section class="post-full-content">
                     <div class="post-content">
                         {{content}}
